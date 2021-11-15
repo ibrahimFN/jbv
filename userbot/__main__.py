@@ -4,7 +4,7 @@
 #
 # This file is a part of < https://github.com/JMTHON-AR/JMTHON >
 # Please read the GNU Affero General Public License in;
-# < https://www.github.com/JMTHON-AR/LICENSE/blob/LICENSE/LICENSE/ 
+# < https://www.github.com/JMTHON-AR/LICENSE/blob/LICENSE/LICENSE/
 # ================================================================
 
 import sys
@@ -35,7 +35,7 @@ try:
     LOGS.info(f"⚒️ يتم تشغيل جمثون")
     jmthon.loop.run_until_complete(setup_bot())
     LOGS.info(f"✅ انتهاء التشغيل ")
- 
+
 except Exception as e:
     LOGS.error(f"{str(e)}")
     sys.exit()
@@ -59,7 +59,9 @@ async def startup_process():
     await load_plugins("assistant")
     print("--------------------------------------------------------")
     print("تم بنجاح اكتمال تنصيب سورس جمثون المجاني ✓")
-    print(" - ارسل  فحص  للتأكد من البوت\n-  ولعرض اوامر السورس ارشل  .الاوامر\n-  للمزيد من المعلومات ادخل الى مجموعتك في التليجرام")
+    print(
+        " - ارسل  فحص  للتأكد من البوت\n-  ولعرض اوامر السورس ارشل  .الاوامر\n-  للمزيد من المعلومات ادخل الى مجموعتك في التليجرام"
+    )
     print("-------------------------------------------------------")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
@@ -68,6 +70,7 @@ async def startup_process():
     await startupmessage()
     JmtCheck.sucess = True
     return
+
 
 jmthon.loop.run_until_complete(startup_process())
 
