@@ -15,6 +15,7 @@ from ..core.managers import edit_or_reply
 from ..sql_helper import warns_sql as sql
 from . import *
 
+
 @jmthon.on(admin_cmd(pattern="تحذير(.*)"))
 async def _(event):
     warn_reason = event.pattern_match.group(1)
@@ -79,6 +80,7 @@ async def _(event):
     reply_message = await event.get_reply_message()
     sql.reset_warns(reply_message.sender_id, event.chat_id)
     await edit_or_reply(event, "**▸┊تم إعادة ضبط التحذيرات!**")
+
 
 @jmthon.on(admin_cmd(pattern="امر تحذيرات(?: |$)(.*)"))
 async def _(event):
