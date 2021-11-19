@@ -15,7 +15,7 @@ from ..core.managers import edit_or_reply
 from ..sql_helper import warns_sql as sql
 
 
-@jmthon.on(admin_cmd(pattern="تحذير(?: |$)(.*)"))
+@jmthon.on(admin_cmd(pattern="تحذير(.*)"))
 async def _(event):
     warn_reason = event.pattern_match.group(1)
     if not warn_reason:
@@ -46,7 +46,7 @@ async def _(event):
     await edit_or_reply(event, reply)
 
 
-@jmthon.on(admin_cmd(pattern="التحذيرات(?: |$)(.*)"))
+@jmthon.on(admin_cmd(pattern="التحذيرات$"))
 async def _(event):
     reply_message = await event.get_reply_message()
     if not reply_message:
@@ -74,7 +74,7 @@ async def _(event):
     await event.edit(text)
 
 
-@jmthon.on(admin_cmd(pattern="حذف التحذير(?: |$)(.*)"))
+@jmthon.on(admin_cmd(pattern="حذف التحذير$"))
 async def _(event):
     reply_message = await event.get_reply_message()
     sql.reset_warns(reply_message.sender_id, event.chat_id)
