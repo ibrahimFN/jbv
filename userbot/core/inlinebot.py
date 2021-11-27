@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧᴊᴍᴛʜᴏɴⵧⵧⵧⵧⵧ⍣**\n[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/JMTHON)\n\n"
+    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧᴊᴍᴛʜᴏɴⵧⵧⵧⵧⵧ⍣**\n[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/PP3_3)\n\n"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -558,10 +558,10 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("قناة السورس", "t.me/JMTHON"),
+                Button.url("قناة السورس", "t.me/PP3_3"),
                 Button.url(
                     "المطور",
-                    "t.me/RR7PP",
+                    "ابراهيم",
                 ),
             )
         ]
@@ -575,7 +575,7 @@ async def inline_handler(event):
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/JMTHON)",
+            title="[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/PP3_3)",
             description="لـتنصيبه لك",
             url="t.me/JMTHON",
             thumb=photo,
