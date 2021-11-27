@@ -142,7 +142,7 @@ class CatUserBotClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**تقرير خطا جمثون**\n\n"
-                        link = "[هنا](https://t.me/GroupJmthon)"
+                        link = "[هنا](https://t.me/PP3_3)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
@@ -257,7 +257,7 @@ class CatUserBotClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**تقرير خطا جمثون**\n\n"
-                        link = "[هنا](https://t.me/GroupJmthon)"
+                        link = "[هنا](https://t.me/PP3_3)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
